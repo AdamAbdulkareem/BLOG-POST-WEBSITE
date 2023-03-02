@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.blog-post{
+    width: 85%;
+    margin-inline: auto;
+}
+.company-logo{
+    width: 85%;
+    margin-inline: auto;
+}
+.company-logo .company-img{
+    width: 30%;
+    margin-inline: 6.7rem;
+}
+.blog-post .blog-img{
+    width: 100%;
+    height: 100%;
+}
