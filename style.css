@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-body{
-    background-color: aquamarine;
+
+body {
+    background-color: #EAE7DC;
 }
-header{
-    background-color:aliceblue;
-    border-bottom: 5px red solid;
+
+header {
+    background-color: #ffffff;
+    border-bottom: 5px #8E8D8A solid;
     margin-block-end: .6rem;
 }
+
 .company-logo {
     position: relative;
     top: 0;
@@ -26,27 +30,38 @@ header{
 }
 
 .blog-post {
+    position: relative;
     width: 90%;
     margin-inline: auto;
     margin-top: 2.5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 10%;
 }
 
 .blog-txt {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
     width: 85%;
     margin-inline: auto;
     font-family: 'Roboto', sans-serif;
-    background-color: bisque;
-    padding-inline: 5%;
+    background-color: #ffffff;
+    padding-block: 4.5%;
+    padding-inline: 4.5%;
     text-align: left;
-    border-top: 4.5px red solid;
+    border-top: 4.5px #8E8D8A solid;
 }
-.blog-txt a{
+
+.blog-txt a {
     font-size: 0.7rem;
 }
-.blog-txt span{
+
+.blog-txt span {
     font-size: 0.9rem;
     line-height: 1.4rem;
 }
+
 .blog-post .blog-img {
     width: 100%;
     height: 100%;
