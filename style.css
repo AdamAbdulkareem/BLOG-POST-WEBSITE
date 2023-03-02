@@ -1,21 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
-.blog-post{
-    width: 85%;
-    margin-inline: auto;
+body{
+    background-color: aquamarine;
 }
-.company-logo{
-    width: 85%;
-    margin-inline: auto;
+header{
+    background-color:aliceblue;
+    border-bottom: 5px red solid;
+    margin-block-end: .6rem;
 }
-.company-logo .company-img{
+.company-logo {
+    position: relative;
+    top: 0;
+    width: 25%;
+    margin-inline: auto;
+    margin-block-end: 0.5rem;
+}
+
+.company-logo .company-img {
     width: 30%;
     margin-inline: 6.7rem;
 }
-.blog-post .blog-img{
+
+.blog-post {
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 2.5rem;
+}
+
+.blog-txt {
+    width: 85%;
+    margin-inline: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: bisque;
+    padding-inline: 5%;
+    text-align: left;
+    border-top: 4.5px red solid;
+}
+.blog-txt a{
+    font-size: 0.7rem;
+}
+.blog-txt span{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+}
+.blog-post .blog-img {
     width: 100%;
     height: 100%;
 }
