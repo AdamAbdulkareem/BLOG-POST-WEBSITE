@@ -6,14 +6,22 @@
     border: 0;
 }
 
+textarea,
+input {
+    outline: none;
+    background-color: blue;
+}
+
 body {
     background-color: #EAE7DC;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     background-color: #ffffff;
     border-bottom: 5px #8E8D8A solid;
     margin-block-end: .6rem;
+    padding-top: 4%;
 }
 
 .company-logo {
@@ -65,4 +73,27 @@ header {
 .blog-post .blog-img {
     width: 100%;
     height: 100%;
+}
+
+.generate {
+    position: relative;
+    height: 10%;
+    /* border: 3px red dashed; */
+}
+
+.generate-prompt {
+    width: 70%;
+    padding-block: 2%;
+    font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+}
+
+imput {
+    border: 0;
+}
+
+.generate-btn {
+    position: absolute;
+    right: 1;
+    background: red;
+    /* border: 2px blue dashed; */
 }
