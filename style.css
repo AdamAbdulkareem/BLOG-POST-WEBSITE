@@ -5,11 +5,11 @@
     padding: 0;
     border: 0;
 }
-
-textarea,
 input {
     outline: none;
-    background-color: blue;
+    background-color: red;
+    border-radius: 0.1rem;
+    padding-inline: 7.5%;
 }
 
 body {
@@ -77,8 +77,10 @@ header {
 
 .generate {
     position: relative;
-    height: 10%;
-    /* border: 3px red dashed; */
+    width: 90%;
+    margin-inline: auto;
+    padding-block: 5%;
+    border: 5px red dashed;
 }
 
 .generate-prompt {
@@ -87,13 +89,16 @@ header {
     font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
 }
 
-imput {
-    border: 0;
-}
-
-.generate-btn {
+/* .generate-btn {
     position: absolute;
     right: 1;
     background: red;
-    /* border: 2px blue dashed; */
+    width: 10%;
+    height: 90%;
+} */
+.bi{
+    font-size: 1.5rem;
+}
+.contact{
+    background-color: #8E8D8A;
 }
