@@ -5,12 +5,6 @@
     padding: 0;
     border: 0;
 }
-input {
-    outline: none;
-    background-color: red;
-    border-radius: 0.1rem;
-    padding-inline: 7.5%;
-}
 
 body {
     background-color: #EAE7DC;
@@ -77,28 +71,61 @@ header {
 
 .generate {
     position: relative;
-    width: 90%;
-    margin-inline: auto;
-    padding-block: 5%;
-    border: 5px red dashed;
+    background-color: white;
+    padding: 8%;
+}
+
+.generate-box {
+    display: flex;
+    justify-content: flex-start;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem;
 }
 
 .generate-prompt {
-    width: 70%;
-    padding-block: 2%;
-    font-size: calc(16px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+    width: 80%;
+    padding: 2%;
+    font-size: calc(15px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+    padding-inline: 2.5%;
+    background-color: #8E8D8A;
+
 }
 
-/* .generate-btn {
-    position: absolute;
-    right: 1;
-    background: red;
-    width: 10%;
-    height: 90%;
-} */
-.bi{
+.generate-btn .bi {
+    font-size: calc(30px + (24 - 16)*(100vw - 320px)/(1920 - 320));
+}
+
+.contact {
+    background-color: #8E8D8A;
+    padding-block: 12%;
+}
+
+.contact-social {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 4.5%;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+hr {
+    width: 0.15rem;
+    background-color: black;
+    margin-inline: 2.5%;
+}
+
+.contact .bi {
     font-size: 1.5rem;
 }
-.contact{
-    background-color: #8E8D8A;
+.copyright{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
 }
