@@ -8,7 +8,7 @@ if (len(sys.argv) != 2):
     exit()
 
 title = sys.argv[1]
-
+print(title)
 prompt = "I want to write a blog post about '" + title + \
     "'. Give a list of 5 sections in a numbered bullet point format about this blog post."
 synopsis = openai.Completion.create(
@@ -20,23 +20,23 @@ synopsis = openai.Completion.create(
 synopsis = synopsis.choices[0].text
 synopsis = synopsis.strip()
 print(synopsis)
-
-
-
+print("\n")
 
 lines = synopsis.strip().splitlines()
 for section in lines:
+    print(section)
+    print("\n")
     prompt = "\nI am writing a blog post with the title '" + title + "'.\n\nThe list of sections of this blog post is the following:\n" + \
         synopsis + "\n\nWrite the section '" + section + \
         "' in a detailed and complete way, in 500 words minimum."
-    
+
     section_paragraph = openai.Completion.create(
         model="text-davinci-003",
         prompt=prompt,
         max_tokens=750,
         temperature=0.7
     )
-section_paragraph = section_paragraph.choices[0].text
-section_paragraph = section_paragraph.strip()
-print(section_paragraph)
-exit()
+    section_paragraph = section_paragraph.choices[0].text
+    section_paragraph = section_paragraph.strip()
+    print(section_paragraph)
+    print("\n")
